@@ -1,0 +1,11 @@
+body{
+    background:green
+}
+    table{
+        border: 3 px solid black;
+        background: yellow;
+    }
+    .myButton{
+        background:brown
+    }
+    
