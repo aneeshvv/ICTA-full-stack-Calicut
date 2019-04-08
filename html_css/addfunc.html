@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function operate()
+    {
+    var x=parseInt(document.getElementById("num1").value);
+    var y=parseInt(document.getElementById("num2").value);
+    var op=document.getElementById("operation").value;
+    var z=0;
+    if(op=="Addition")
+    {
+        z=x+y;
+    }
+    else if(op=="Subtraction")
+    {
+        z=x-y;
+    }
+    else if(op=="Multiplication")
+    {
+        z=x*y;
+    }
+    else if(op=="Division")
+    {
+        z=x/y;
+    }
+    console.log(z);
+    document.getElementById("result".innerhtml=z);
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col -12 col -sm -4"></div>
+            <div class="col col -12 col -sm -4"></div>
+<form>
+    <table>
+        <tr>
+            <td>Number1:</td>
+            <td><input type="number" id="num1"></td>
+        </tr>
+        <tr>
+        <td>Number2:</td>
+        <td><input type="number" id="num2"></td>
+        </tr>
+        <td>Operation</td>
+        <td><select id="operation">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+    </td>
+        <tr>
+            <td><button type="submit" onclick="operate();">Add</button></td>
+        </tr>
+        <td><p id="result"></td>
+    <td></td>
+    </table>
+</form>
+        </div>
+    </div>
+</body>
+</html>

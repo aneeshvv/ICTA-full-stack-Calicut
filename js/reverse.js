@@ -1,10 +1,16 @@
-var num=12121;
-var rev=0;
-var rem=0;
-while(num>0)
+var num1=3563;
+
+var result=findreverse(num1);
+console.log(result);
+function findreverse()
 {
-rem=num%10;
+    var rev=0;
+var rem=0;
+while(num1>0)
+{
+rem=num1%10;
 rev=rev*10+rem;
-num=parseInt(num/10);
+num1=parseInt(num1/10);
 }
-console.log(rev);
+return rev;
+}

@@ -1,0 +1,3 @@
+a="Vimal Jyothi College"
+b=a[0:13]+"Engineering"+a[14:]
+print b

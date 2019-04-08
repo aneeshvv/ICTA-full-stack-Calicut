@@ -2,36 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
+<script>
+function read(){
+    var n=document.getElementById("name").value;
+    var roll=document.getElementById("rollno").value;
+    var adm=document.getElementById("admno").value;
+    var colleg=document.getElementById("coll").value;
+    var usernam=document.getElementById("username").value;
+    var password=document.getElementById("pass").value;
+    var conpass=document.getElementById("pass").value;
+}
+</script>
 <body>
-    <table>
+        <div class="container">
+                <div class="row">
+                        <div class="col col-12 col-sm-4">
+    <table class="table">
     <tr>
      <td>Name:</td> 
-     <td><input type="text"></td>  
+     <td><input type="text" id="name"></td>  
     </tr>
     <tr>
        <td>Roll number:</td> 
-       <td><input type="number"></td>
+       <td><input type="number" id="rollno"></td>
     </tr>
     <tr>
         <td>Admission number:</td>
-        <td><input type="number"></td>
+        <td><input type="number" id="admno"></td>
     </tr>
 <tr>
     <td>College:  </td>
-<td><input type="text"></td>
+<td><input type="text" id="coll"></td>
 </tr>
 <tr><td>Username :</td>
-    <td><input type="text"></td>
+    <td><input type="text" id="username"></td>
 </tr>
 <tr><td>Password :</td>
-    <td><input type="password"></td>
+    <td><input type="password" id="pass"></td>
 </tr>
 <tr><td>Confirm Password</td>
-    <td><input type="password"></td>
+    <td><input type="password" id="pass"></td>
     <tr>
         <td>District</td>
         <td>
@@ -41,7 +58,16 @@
             </select>
         </td>
     </tr>
-<td><input type="button" value="Register"</td></tr>
+    <td><button type="button" class="btn-danger" onclick="read();">Register</button></td>
+
+
+</tr>
 </table>
+</div>
+                        
+<div class="col col-12 col-sm-4"></div>
+</div>
+
+</div> 
 </body>
 </html>

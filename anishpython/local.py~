@@ -1,0 +1,6 @@
+def test():
+	global y=20
+	print "Value of x is ",x,"y is ",y
+X=50
+test()
+print "Value of x is ",X,"y is ",y

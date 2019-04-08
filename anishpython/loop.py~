@@ -1,0 +1,4 @@
+a=int(input("Enter the number"))
+while a>=1:
+	print("tick",a)
+	a=a-1
